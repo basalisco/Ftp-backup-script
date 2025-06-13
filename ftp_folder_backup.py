@@ -117,7 +117,7 @@ def get_remote_dirs(ftp, t):
         return []
 
 def animate_discovery(stop_event, t):
-    spinner = itertools.cycle(['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷'])
+    spinner = itertools.cycle(['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'])
     while not stop_event.is_set():
         try:
             spinner_text = f'\r {Colors.GREEN}{t["STATUS_DISCOVERING"]}{next(spinner)}{Colors.RESET}'
